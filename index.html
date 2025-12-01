@@ -85,17 +85,11 @@
       <section id="chatbot" class="container">
   <h2>Chatbot</h2>
 
-  <df-messenger
-    chat-title="KasonBot"
-    agent-id="000caec4-e9cc-4a7b-893f-06e12ec622a8"
-    language-code="en">
-  </df-messenger>
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-
+  <!-- Local chatbot -->
   <div id="local-chat" style="margin-top:16px;">
-    <div id="local-messages" style="min-height:80px;border:1px solid #ddd;padding:8px;border-radius:6px;background:#fff;"></div>
+    <div id="local-messages" style="min-height:150px;border:1px solid #ddd;padding:8px;border-radius:6px;background:#fff;overflow-y:auto;"></div>
     <div style="display:flex;gap:8px;margin-top:8px;">
-      <input id="local-input" placeholder="Ask about skills, projects, resume..." style="flex:1;padding:8px;border-radius:6px;border:1px solid #ccc;">
+      <input id="local-input" placeholder="Ask me about skills, projects, resume..." style="flex:1;padding:8px;border-radius:6px;border:1px solid #ccc;">
       <button id="local-send" style="padding:8px 12px;border-radius:6px;">Send</button>
     </div>
   </div>
