@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kason Carter — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Hi, I'm Kason Carter</h1>
+      <p>Computer Technology Student — Networking Infrastructure focus.</p>
+      <div id="qr-section">
+        <img id="qr-code" alt="QR to portfolio" />
+        <p>Scan to open this portfolio</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Short bio — replace this text.</p>
+      <ul>
+        <li>Networking: TCP/IP, VLANs</li>
+        <li>Linux: Ubuntu, CentOS</li>
+        <li>Languages: Python, JavaScript, Java, Bash</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <!-- repeat this block for each project -->
+      <article class="project">
+        <h3>Project Title</h3>
+        <p>Short description...</p>
+        <p><a href="https://github.com/YOUR_GITHUB/PROJECT_REPO" target="_blank">GitHub</a></p>
+      </article>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p><a href="resume.pdf" download>Download resume (PDF)</a></p>
+      <p><a href="resume.html" target="_blank">Open HTML resume</a> (optional)</p>
+    </section>
+
+    <section id="chat">
+      <h2>Chatbot</h2>
+      <div id="dialogflow-bot">
+
+<df-messenger
+  intent="WELCOME"
+  chat-title="HealthMateBot"
+  agent-id="000caec4-e9cc-4a7b-893f-06e12ec622a8"
+  language-code="en"
+></df-messenger>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input name="name" placeholder="Your name" required />
+        <input name="email" type="email" placeholder="Your email" required />
+        <textarea name="message" rows="4" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p>Or email: <a href="mailto:kasoncarter01@gmail.com">kasoncarter01@gmail.com</a></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
