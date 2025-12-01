@@ -27,11 +27,21 @@ body {
 }
 
 .home-image {
-    flex: 1; /* Image takes remaining space */
-    text-align: right; /* Align image to the right */
+    flex: 1;
+    text-align: right;
 }
 
 .home-image img {
-    max-width: 250px; /* Adjust size */
-    border-radius: 10px; /* Rounded corners */
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
+
+
+
+
+
+
